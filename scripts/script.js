@@ -325,7 +325,7 @@ function renderMoreInfo(movieInfo) {
     title.textContent = `${movieInfo.Title}, ${movieInfo.Year}`;
     genre.textContent = `Genre: ${movieInfo.Genre}`;
     director.textContent = `Directed by: ${movieInfo.Director}`;
-    actors.textContent = `With: ${movieInfo.Actors}`;
+    actors.textContent = `Actors: ${movieInfo.Actors}`;
     language.textContent = `Language: ${movieInfo.Language}`;
     plot.textContent = `Movie Plot: ${movieInfo.Plot}`;
     rating.textContent = `Rating: ${movieInfo.imdbRating}`;
