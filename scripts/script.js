@@ -26,7 +26,6 @@ window.addEventListener('load', () => {
 
 function startPage() {
     window.scrollTo(0,0)
-    document.querySelector('.asideNav').classList.add('menuClose');
     document.querySelector('.searchedMovies').classList.add('d-none');
     document.querySelector('.topMovies').classList.remove('d-none');
     document.querySelector('.favoriteMovies').classList.add('d-none');
@@ -165,7 +164,6 @@ function shuffleArray(movieArray) {
 //Get the value from the input field and get the api from the function getApi in api.js
 async function getMovie(event) {
     event.preventDefault();
-    document.querySelector('.asideNav').classList.add('menuClose');
     window.scrollTo(0,0);
     loadingImg.classList.remove('d-none');
     document.querySelector('.topMovies').classList.add('d-none');
@@ -175,7 +173,6 @@ async function getMovie(event) {
 
     if(inputInfo === '') {
         alert('Please enter a movie title');
-        document.querySelector('.asideNav').classList.remove('menuClose');
         loadingImg.classList.add('d-none');
         document.querySelector('.topMovies').classList.remove('d-none');    
         document.querySelector('.searchedMovies').classList.add('d-none');
@@ -215,7 +212,6 @@ async function fetchPage(inputInfo) {
         console.log('Error while fetching movie informations from the different pages in the api: ', error);
         alert('Could not find any movies with that title. Try again')
         document.querySelector('#search').value = '';
-        document.querySelector('.asideNav').classList.remove('menuClose');
         loadingImg.classList.add('d-none');
         document.querySelector('.topMovies').classList.remove('d-none');    
         document.querySelector('.searchedMovies').classList.add('d-none');
@@ -375,7 +371,6 @@ function randomMovieTitle() {
 function favoritePage() {
     console.log('Inside the favoritePage function!');
     window.scrollTo(0,0);
-    document.querySelector('.asideNav').classList.add('menuClose');
     document.querySelector('.searchedMovies').classList.add('d-none');
     document.querySelector('.topMovies').classList.add('d-none');
     document.querySelector('.favoriteMovies').classList.remove('d-none'); 
