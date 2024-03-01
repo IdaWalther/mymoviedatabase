@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Database</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/d7e80e3740.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapContent">
+    <header>
+        <img class="logoImg" src="/resources/logo.png" alt="My Movie Database logo">
+    </header>
+    </div>
+    <div class="wrapContent">
+        <button id="menu" class="d-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <aside class="asideNav menuClose">
+            <section>
+            <form>
+                <input class="search" type="text" id="search" placeholder="Search for a movie...">
+                <button class="navBtn" type="submit" id="searchBtn">Search!</button>
+            </form>
+            </section>
+            <section>
+            <button class="navBtn" id="btnStart">Start Page</button>
+            <button class="navBtn" id="btnFav">My Favorites</button>
+            </section>
+            <section>
+            <p>You should watch <br><span id="randomMovieSpan"></span></p> 
+            <button class="navBtn" id="btnRandom">Help me pick something new!</button>
+            </section>
+        </aside>
+        <main class="mainContainer">
+            <section class="loading"><i class="fa-solid fa-spinner fa-spin"></i></section>
+            <article class="topMovies">
+                <section class="showTrailer">
+                    <button id="btnPrev" class="slideBtn">Previous</button>
+                    <button id="btnNext" class="slideBtn">Next</button>
+                    <ul class="carousel">
+                    </ul>
+                </section>
+                <h1>Top 20 Movies</h1>
+                <section class="topWrapper"></section>
+            </article>
+            <article class="searchedMovies">
+                <h1>Search Result</h1>
+                <section class="searchedWrapper"></section>
+            </article>
+            <article class="favoriteMovies">
+                <h1>My Favorites</h1>
+                <section class="favoriteWrapper"></section>
+            </article>
+        </main>
+    </div> 
+    <script type="module" src="scripts/script.js"></script>
+</body>
+</html>
