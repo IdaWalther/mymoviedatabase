@@ -393,7 +393,7 @@ header {
         display: block;
     }
     .loading {
-        transform: translateX(45vw);
+        transform: translateX(40vw);
     }
 }
 
