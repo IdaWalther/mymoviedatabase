@@ -302,7 +302,7 @@ function renderMoreInfo(movieInfo) {
     clearTimeout(timeout);
     loadingImg.classList.add('d-none');
     let mainRef = document.querySelector('.mainContainer');
-    let movieWrapper = document.createElement('div');
+    let movieWrapper = document.createElement('section');
     movieWrapper.classList.add('movieContainer');
     let movieContainer = document.createElement('section');
     let movieInfoContent = document.createElement('section');
